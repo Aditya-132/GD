@@ -23,7 +23,7 @@ const TextEditor = () => {
 
     useEffect(() => {
         // Connect to the Socket.IO server
-        const s = io("http://localhost:3001", { rejectUnauthorized: false });
+        const s = io("server-czhf1qwnh-googledocs-projects.vercel.app", { rejectUnauthorized: false });
         setSocket(s);
 
         // Cleanup function to disconnect the socket when the component unmounts

@@ -2,12 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.js", // Replace with the entry point of your server file
-      "use": "@vercel/node" // Specify the Vercel builder to use
+      "src": "index.js", 
+      "use": "@vercel/node"
     }
   ],
   "routes": [
-    { "handle": "filesystem" }, // Handle static assets
-    { "src": "/.*", "dest": "index.js" } // Route all other requests to the server
+    { 
+      "src": "/(.*)", 
+      "dest": "index.js" 
+    }
   ]
 }

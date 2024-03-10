@@ -12,7 +12,7 @@ mongoose.connect(`mongodb+srv://adityachincholkar11:${encodeURIComponent('Aditya
 });
 
 // Setting up Socket.IO server
-const io = require('socket.io')(3001, {
+const socket = io('https://cors-anywhere.herokuapp.com/https://gd-server.vercel.app', {
     cors: {
         origin: "https://gd-coral.vercel.app",
         methods: ['GET', 'POST']

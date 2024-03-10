@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light gray background similar to Google Docs */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* White background for the editor */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the editor */
+}
+
+.ql-editor {
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 800px;
+  border: 1px solid #ddd; /* Light border around the editor */
+  border-radius: 5px; /* Rounded corners for the editor */
+  padding: 10px;
+  background-color: #fff; /* White background for the editor content */
+}
+
+.ql-toolbar {
+  border-bottom: 1px solid #ddd; /* Light border at the bottom of the toolbar */
+  background-color: #f8f9fa; /* Light gray background for the toolbar */
+}
+
+.ql-container {
+  border: none !important; /* Remove border around the entire editor */
+}
+
+/* Custom scrollbar styles */
+.ql-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ql-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.ql-container::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.05);
+}

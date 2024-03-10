@@ -7,9 +7,7 @@
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "index.js" // Replace with the entry point of your server file
-    }
+    { "handle": "filesystem" }, // Handle static assets
+    { "src": "/.*", "dest": "index.js" } // Route all other requests to the server
   ]
 }

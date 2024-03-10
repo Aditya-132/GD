@@ -14,7 +14,7 @@ mongoose.connect(`mongodb+srv://adityachincholkar11:${encodeURIComponent('Aditya
 // Setting up Socket.IO server
 const io = require('socket.io')(3001, {
     cors: {
-        origin: "https://gd-snowy.vercel.app",
+        origin: "gd-3swjvpexi-googledocs-projects.vercel.app",
         methods: ['GET', 'POST']
     }
 });

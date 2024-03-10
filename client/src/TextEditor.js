@@ -23,7 +23,7 @@ const TextEditor = () => {
 
     useEffect(() => {
         // Connect to the Socket.IO server
-        const s = io("https://server-coral-beta.vercel.app/", { rejectUnauthorized: false });
+        const s = io("", { rejectUnauthorized: false });
         setSocket(s);
 
         // Cleanup function to disconnect the socket when the component unmounts

@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js" // Assuming your entry point is index.js
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1", // Add express package here
     "mongodb": "^6.4.0",
     "mongoose": "^8.2.1",
     "nodemon": "^3.1.0",
-    "socket.io": "^4.0.1"
+    "socket.io": "^4.0.1",
+    "cors": "^2.8.5" // cors package if you haven't added it already
   }
 }

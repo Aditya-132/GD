@@ -2,15 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "*.js",
-      "use": "@vercel/node"
+      "src": "index.js", // Replace with the entry point of your server file
+      "use": "@vercel/node" // Specify the Vercel builder to use
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "index.js" // Replace with the entry point of your server file
     }
-  ],
-  
+  ]
 }
